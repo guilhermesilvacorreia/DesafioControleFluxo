@@ -1,18 +1,41 @@
-## Getting Started
+# DesafioControleFluxo
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto foi desenvolvido como parte de um exercício de aprendizado em Controle de Fluxo e depuração de código no Java. Ele implementa um sistema que utiliza conceitos como exceções personalizadas, entrada de dados via terminal e laços de repetição.
 
-## Folder Structure
+---
 
-The workspace contains two folders by default, where:
+## Objetivo
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### Criar um programa em Java que:
+1. Receba dois números inteiros como parâmetros via terminal.
+2. Realize a validação e execute uma contagem com base nos parâmetros fornecidos.
+3. Lance uma exceção customizada caso os parâmetros sejam inválidos.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+---
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Estrutura do Projeto
 
-## Dependency Management
+### Diretórios e Arquivos
+- **src:** Pasta contendo os arquivos-fonte do projeto.
+  - `Contador.java`: Implementação da lógica principal.
+  - `ParametrosInvalidosException.java`: Classe de exceção personalizada.
+- **bin:** Pasta contendo os arquivos compilados.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
+
+## Funcionalidades
+
+- **Entrada de Dados:** Recebe dois números inteiros via terminal.
+- **Validação:** 
+  - O primeiro número deve ser menor que o segundo.
+  - Caso contrário, uma exceção personalizada `ParametrosInvalidosException` é lançada.
+- **Contagem e Impressão:** Calcula o número de interações e imprime os números incrementados no console.
+- **Exceções Personalizadas:** A classe `ParametrosInvalidosException` é usada para validar e tratar erros de negócio.
+
+---
+## Tecnologias Utilizadas
+**Java**: Linguagem de programação usada no projeto.
+
+**IDE**: IntelliJ IDEA para desenvolvimento.
+
+**Git**: Controle de versão.
